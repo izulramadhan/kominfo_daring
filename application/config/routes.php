@@ -49,6 +49,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+
+// URL Admin Settings
+
+$route['4dm1nDashboard/home'] = 'page/homeadmin';
+$route['4dm1nDashboard/aturberita'] = 'page/aturberita';
+$route['4dm1nDashboard/aturmagang'] = 'page/aturmagang';
+$route['4dm1nDashboard/pendaftar'] = 'page/lihatpendaftar';
+$route['4dm1nDashboard/aturuser'] = 'page/aturuser';
+$route['4dm1nDashboard/verifpendaftar'] = 'page/verifikasipendaftar';
+
+// URL Daftar Magang Settings
+
+$route['Homemagang'] = 'page/homemagang';
+$route['Daftarmagang'] = 'page/daftarmagang';
+$route['Aturakunku'] = 'page/aturakun';
+$route['Statusdaftar'] = 'page/status';
+
+
 $route['default_controller'] = 'page';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
