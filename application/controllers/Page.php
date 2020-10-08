@@ -84,4 +84,53 @@ class Page extends CI_Controller {
 		$this->load->view('logreg/register');
 	
 	}
+	
+
+	// Halaman User Magang
+
+	public function homemagang(){
+		$this->load->view('magang/homemagang');
+	}
+
+	public function daftarmagang(){
+		$this->load->view('magang/magang');
+	}
+
+	public function aturakun(){
+		$this->load->view('magang/settings');
+	}
+
+	public function status(){
+		$this->load->view('magang/status');
+	}
+
+
+	// Halaman Admin
+
+	public function homeadmin(){
+		$this->load->view('backend/admin');
+	}
+
+	public function aturberita(){
+		$this->load->view('backend/berita');
+	}
+
+	public function aturmagang(){
+		$this->load->view('backend/aturmagang');
+	}
+
+	public function lihatpendaftar(){
+		$this->load->view('backend/pendaftar');
+	}	
+
+	public function aturuser(){
+		$this->load->view('backend/user');
+	}
+
+	public function verifikasipendaftar(){
+		$this->load->view('backend/verifikasi');
+	}
+
+	
+
 }
